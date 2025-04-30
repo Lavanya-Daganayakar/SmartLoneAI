@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Loan Offers</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Congratulations!</h1>
+    <p>Your Predicted CIBIL Score: <strong>{{ score }}</strong></p>
+
+    <h2>Eligible Loan Offers:</h2>
+    <ul>
+        {% for bank in banks %}
+        <li><strong>{{ bank.name }}</strong> - Loan Amount: <strong>{{ bank.amount }}</strong></li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Check Another Score</a>
+</div>
+
+<script src="/static/js/script.js"></script>
+</body>
+</html>

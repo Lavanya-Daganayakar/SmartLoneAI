@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Loan AI - Home</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Smart Loan AI</h1>
+    <p>Check your CIBIL Score and Loan Offers!</p>
+
+    <form action="/predict" method="post">
+        <input type="number" name="age" placeholder="Enter Your Age" required><br>
+        <input type="number" name="income" placeholder="Enter Your Monthly Income" required><br>
+        <input type="number" name="loan_amount" placeholder="Enter Desired Loan Amount" required><br>
+        <input type="number" name="existing_loans" placeholder="Enter Number of Existing Loans" required><br>
+        <button type="submit">Check Now</button>
+    </form>
+</div>
+
+<script src="/static/js/script.js"></script>
+</body>
+</html>
